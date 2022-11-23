@@ -1,0 +1,16 @@
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+
+.side-nav{
+  background-color: rgba(255, 248, 220, 0.753);
+}
+
+.side-nav-content{
+  background-color: cornsilk;
+}

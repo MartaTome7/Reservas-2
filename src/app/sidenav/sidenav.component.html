@@ -1,0 +1,22 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav class="side-nav" mode="side" opened>
+    Sidenav content
+    <mat-selection-list #menus [multiple]="false">
+      <mat-list-option
+        *ngFor="let menu of typeOfMenus; let i = index"
+        [value]="i"
+      >
+        {{ i }} - {{ menu }}
+      </mat-list-option>
+    </mat-selection-list>
+
+    <p>
+      Option selected:
+      {{ showOption(menus) }}
+    </p>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="side-nav-content">
+    Main content
+  </mat-sidenav-content>
+</mat-sidenav-container>
